@@ -1,5 +1,11 @@
 # vite-plugin-compile-sass-to-public
 
+## 1.1.0
+
+### Minor Changes
+
+-   [`3c0dcca`](https://github.com/ethan-heo/vite-plugin-compile-sass-to-public/commit/3c0dcca03e0951fe573d6eaa5dbb36847a1a37b9) Thanks [@ethan-heo](https://github.com/ethan-heo)! - index.d.ts, index.cjs 파일을 사용할 수 있도록 수정한다
+
 ## 1.0.1
 
 ### Patch Changes
