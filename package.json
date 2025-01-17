@@ -13,7 +13,7 @@
         }
     },
     "files": [
-        "dist/index.js"
+        "dist/**"
     ],
     "scripts": {
         "build:es": "tsc --project tsconfig.json",
