@@ -1,0 +1,38 @@
+{
+    "name": "vite-plugin-compile-sass-to-public",
+    "version": "0.0.0",
+    "description": "Plugin to make sass files compile from the source directory into public files",
+    "type": "module",
+    "main": "./dist/index.js",
+    "types": "./dist/index.d.ts",
+    "exports": {
+        ".": {
+            "import": "./dist/index.js",
+            "types": "./dist/index.d.ts",
+            "require": "./dist/index.cjs"
+        }
+    },
+    "files": [
+        "dist/index.js"
+    ],
+    "scripts": {
+        "build:es": "tsc --project tsconfig.json",
+        "build:cjs": "tsc --project tsconfig.cjs.json && cp ./dist/cjs/index.js ./dist/index.cjs && rm -r ./dist/cjs",
+        "build": "pnpm build:es && pnpm build:cjs"
+    },
+    "keywords": [
+        "vite",
+        "vite-plugin"
+    ],
+    "author": "ethan-heo",
+    "license": "MIT",
+    "devDependencies": {
+        "@types/node": "^22.10.7",
+        "changeset": "^0.2.6",
+        "typescript": "^5.7.3"
+    },
+    "peerDependencies": {
+        "sass-embedded": "^1.83.4",
+        "vite": "^5 || ^6"
+    }
+}
