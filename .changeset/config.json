@@ -1,6 +1,6 @@
 {
     "$schema": "https://unpkg.com/@changesets/config@3.0.5/schema.json",
-    "changelog": "@changesets/changelog-github",
+    "changelog": ["@changesets/changelog-github", { "repo": "ethan-heo/vite-plugin-compile-sass-to-public" }],
     "commit": false,
     "access": "restricted",
     "baseBranch": "master",
